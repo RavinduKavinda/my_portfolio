@@ -7,14 +7,14 @@
     --first-color: #0984e3;
     --title-color: #2d3436;
     --text-color: #636e72;
-    --body-color: #dfe6e9;
+    --body-color: #fff;
     --container-color: #fff;
     --border-color: #b2bec3;
     --text-white: #fff;
 
-    --body-font: 'League Spartan', sans-serif;
+    --body-font: 'Urbanist', sans-serif;
     --second-font: 'Manrope', sans-serif;
-    --third-font: 'Urbanist', sans-serif;
+    --third-font: 'League Spartan', sans-serif;
     --fourth-font: 'Bai Jamjuree', sans-serif;
 
     --big-font-size: 55px;
