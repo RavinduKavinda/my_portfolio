@@ -122,44 +122,45 @@ export const skills = [
     },
     {
       id: 5,
-      title: 'NodeJS',
-      percentage: '30',
-    },
-    {
-      id: 6,
-      title: 'MongoDB',
-      percentage: '20',
-    },
-    {
-      id: 7,
-      title: 'ExpressJS',
-      percentage: '20',
-    },
-    {
-      id: 8,
-      title: 'C#',
-      percentage: '40',
-    },
-    {
-      id: 9,
-      title: 'PHP',
-      percentage: '40',
-    },
-    {
-      id: 10,
-      title: 'MYSQL',
-      percentage: '40',
-    },
-    {
-      id: 11,
       title: 'Tailwind CSS',
       percentage: '60',
     }, 
     {
-      id: 12,
+      id: 6,
       title: 'Python',
       percentage: '30',
-    }, 
+    },
+    {
+      id: 7,
+      title: 'NodeJS',
+      percentage: '30',
+    },
+    {
+      id: 8,
+      title: 'PHP',
+      percentage: '20',
+    },
+    {/*
+    {
+      id: 9,
+      title: 'ExpressJS',
+      percentage: '20',
+    },
+    {
+      id: 10,
+      title: 'C#',
+      percentage: '40',
+    },
+    {
+      id: 11,
+      title: 'MongoDB',
+      percentage: '40',
+    },
+    {
+      id: 12,
+      title: 'MYSQL',
+      percentage: '40',
+    }, */}
   ];
 
 {/* Education */}
