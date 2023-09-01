@@ -4,9 +4,11 @@ import { links } from '../data';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = React.useState(false);
+
   return (
     <nav className="nav">
-      <div className="nav__menu">
+      <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
         <ul className="nav__list">
           {links.map(({name, icon, path}, index) => {
             return(
@@ -24,7 +26,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="nav__toggle">
+      <div className="nav__toggle" onClick={() => setShowMenu(!showMenu)}>
         <span></span>
         <span></span>
         <span></span>
