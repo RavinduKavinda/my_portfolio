@@ -54,3 +54,16 @@
     background-color: var(--title-color);
     margin-bottom: 4px;
 }
+
+.animate-toggle span:first-child {
+    transform: rotate(45deg) translate(6px, 3px);
+}
+
+.animate-toggle span:nth-child(2) {
+    display: none;
+}
+
+.animate-toggle span:last-child {
+    transform: rotate(-45deg) translate(2px, 1px);
+}
+
