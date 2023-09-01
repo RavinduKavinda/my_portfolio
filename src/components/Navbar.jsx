@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { links } from '../data';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
@@ -10,7 +11,8 @@ const Navbar = () => {
           {links.map(({name, icon, path}, index) => {
             return(
               <li className="nav__item" key={index}>
-                <NavLink to={path} className="nav__link">
+                <NavLink to={path} className={({isActive}) => 
+                  isActive? 'nav__link active-nav' : 'nav__link'}>
                   {icon}
                   <h3 className="nav__name">
                     {name}
