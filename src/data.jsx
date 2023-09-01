@@ -2,7 +2,7 @@ import {
     FaHome,
     FaUser,
     FaFolderOpen,
-    FaSquarePhone,
+    FaPhoneSquare,
     FaGraduationCap,
     FaCode,
   } from 'react-icons/fa';
@@ -44,12 +44,12 @@ export const links = [
       id: 3,
       name: 'Project',
       icon: <FaFolderOpen className='nav__icon' />,
-      path: '/portfolio',
+      path: '/project',
     },
     {
       id: 4,
       name: 'Contact',
-      icon: <FaSquarePhone className='nav__icon' />,
+      icon: <FaPhoneSquare className='nav__icon' />,
       path: '/contact',
     },
   ];
@@ -189,7 +189,7 @@ export const education = [
   ];
 
 {/* Projects */}
-export const portfolio = [
+export const projects = [
     {
       id: 1,
       img: Project01,
