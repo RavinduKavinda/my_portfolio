@@ -107,7 +107,7 @@
     .nav__name{
         position: absolute;
         top: 0;
-        right: 100%;
+        right: 0;
         height: 100%;
         line-height: 50px;
         padding-inline: 30px 25px;
@@ -115,6 +115,27 @@
         font-size: var(--small-font-size);
         color: var(--text-white);
         background-color: var(--first-color);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.5s ease;
     }
 
+    .nav__link:hover .nav__name{
+        opacity: 1;
+        visibility: visible;
+        right: 27px;
+        color: var(--text-white);
+        border-radius: 30px 0 0 30px;
+    }
+
+    .nav__link:hover .nav__icon,
+    .active-nav .nav__icon{
+        color: var(--text-white);
+    }
+
+    .nav__link:hover,
+    .active-nav {
+        background-color: var(--first-color);
+    }
 }
