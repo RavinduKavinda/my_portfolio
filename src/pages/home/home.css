@@ -1,0 +1,46 @@
+.home {
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+}
+
+.home__img {
+    object-fit: cover;
+    height: 100%; 
+    border-radius: 30px;
+}
+
+.home__info {
+    max-width: 600px;
+    margin-inline: auto;
+    padding-top: 20px;
+}
+
+.home__title {
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 70px;
+    color: var(--text-color);
+}
+
+.home__title span {
+    color: var(--first-color);
+}
+
+.home__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--first-color);
+}
+
+.home__desc {
+    line-height: 2;
+    margin-block: 16px 32px;
+}
