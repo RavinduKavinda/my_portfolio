@@ -7,6 +7,9 @@ import './home.css'
 const Home = () => {
   return (
     <section className="home section container">
+
+      <div className="home__left"></div>
+
       <img src={Profile} alt="Profile" className='home__img' />
 
       <div className="home__content">
@@ -30,6 +33,9 @@ const Home = () => {
 
         </div>
       </div>
+
+      <div className="home__right"></div>
+
     </section>
   )
 }

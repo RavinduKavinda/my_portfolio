@@ -44,3 +44,25 @@
     line-height: 2;
     margin-block: 16px 32px;
 }
+
+.home__left {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: var(--first-color);
+    top: -50%;
+    left: -90%;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.home__right {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: var(--first-color);
+    top: 50;
+    left: 90%;
+    transform: rotate(-15deg);
+    z-index: -5;
+}
