@@ -2,7 +2,7 @@ import {
     FaHome,
     FaUser,
     FaFolderOpen,
-    FaPhoneSquare,
+    FaMailBulk,
     FaGraduationCap,
     FaCode,
   } from 'react-icons/fa';
@@ -49,7 +49,7 @@ export const links = [
     {
       id: 4,
       name: 'Contact',
-      icon: <FaPhoneSquare className='nav__icon' />,
+      icon: <FaMailBulk className='nav__icon' />,
       path: '/contact',
     },
   ];
