@@ -12,10 +12,10 @@
     --border-color: #b2bec3;
     --text-white: #fff;
 
-    --body-font: 'Urbanist', sans-serif;
-    --second-font: 'Manrope', sans-serif;
-    --third-font: 'League Spartan', sans-serif;
-    --fourth-font: 'Bai Jamjuree', sans-serif;
+    --body-font: 'League Spartan', sans-serif;
+    --second-font: 'Urbanist', sans-serif;
+    --third-font: 'Bai Jamjuree', sans-serif;
+    --fourth-font: 'Manrope', sans-serif;
 
     --big-font-size: 55px;
     --h1-font-size: 48px;
@@ -82,4 +82,59 @@ textarea {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/*----- Reusable Styles -----*/
+.container {
+    display: grid;
+    gap: 30px;
+}
+
+.section{
+    padding-block: 70px;
+}
+
+.button{
+    display: inline-block;
+    color: var(--title-color);
+    border: 1px solid var(--first-color);
+    padding: 15px 60px 15px 25px;
+    border-radius: 35px;
+    font-family: var(--second-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover{
+    color: var(--text-white);
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background-color: var(--first-color);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+}
+
+.button:hover::before{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.button__icon{
+    background-color: var(--first-color);
+    position: absolute;
+    inset-block: -1px;
+    right:0;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--text-white);
+    font-size: var(--normal-font-size);
+    text-align: center;
+    line-height: 55px;
 }
