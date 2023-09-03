@@ -90,6 +90,11 @@ img {
     gap: 30px;
 }
 
+.rcontainer{
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
 .section{
     padding-block: 70px;
 }
@@ -138,4 +143,12 @@ img {
     font-size: var(--normal-font-size);
     text-align: center;
     line-height: 55px;
+}
+
+.section__title {
+    font-size: var(--big-font-size);
+    font-weight: var(--weight-800);
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--title-color);
 }
