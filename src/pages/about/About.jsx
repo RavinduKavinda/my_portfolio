@@ -1,5 +1,7 @@
 import React from 'react'
 import './About.css'
+import Info from '../../components/info'
+import { FaDownload } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -15,6 +17,15 @@ const About = () => {
               Personal Info.
             </h3>
 
+            <ul className="info__list grid">
+              <Info/>
+            </ul>
+            <a href="" className="button">
+              Download CV{''}
+              <span className="button__icon">
+                <FaDownload/>
+              </span>
+            </a>
           </div>
         </div>
       </section>
