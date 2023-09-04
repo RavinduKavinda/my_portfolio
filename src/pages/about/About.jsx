@@ -2,6 +2,8 @@ import React from 'react'
 import './About.css'
 import Info from '../../components/info'
 import { FaDownload } from 'react-icons/fa'
+import CV from '../../assets/MyCV.pdf'
+import AboutImg from '../../assets/profile.png'
 
 const About = () => {
   return (
@@ -20,13 +22,16 @@ const About = () => {
             <ul className="info__list grid">
               <Info/>
             </ul>
-            <a href="" className="button">
-              Download CV{''}
+            <a href={CV} download='' className="button">
+              Download CV
               <span className="button__icon">
                 <FaDownload/>
               </span>
             </a>
           </div>
+
+          <img src={AboutImg} alt="" className='about__img' />
+          
         </div>
       </section>
     </main>
