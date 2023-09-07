@@ -3,7 +3,7 @@ import './About.css'
 import Info from '../../components/info'
 import { FaDownload } from 'react-icons/fa'
 import CV from '../../assets/MyCV.pdf'
-import AboutImg from '../../assets/profile.png'
+import AboutImg from '../../assets/icon.png'
 
 const About = () => {
   return (
