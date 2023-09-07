@@ -10,7 +10,7 @@
 }
 
 .info__list {
-    row-gap: 20px;
+    row-gap: 30px;
     margin-bottom: 32px;
 }
 
@@ -24,3 +24,14 @@
     font-weight: var(--weight-600);
 }
 
+.about__img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.separator {
+  border-top: 1px solid var(--border-color);
+  min-width: 40%;
+  margin: 72px auto 56px;
+}
