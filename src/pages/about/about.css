@@ -14,3 +14,13 @@
     margin-bottom: 32px;
 }
 
+.info__list .info__title,
+.info__list .info__desc {
+    font-size: var(--small-font-size);
+}
+
+.info__list .info__desc {
+    color: var(--title-color);
+    font-weight: var(--weight-600);
+}
+
