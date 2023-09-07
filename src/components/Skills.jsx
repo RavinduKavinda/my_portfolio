@@ -12,7 +12,7 @@ const Skills = () => {
                 <div className="progress__circle">
                 <CircularProgressbar value={percentage} text={`${percentage}%`}background backgroundPadding={6}
                          styles={buildStyles({
-                            backgroundColor: "#3e98c7",
+                            backgroundColor: `var(--first-color)`,
                             textColor: "#fff",
                             pathColor: "#fff",
                             trailColor: "transparent"})}/>
