@@ -66,3 +66,10 @@
     transform: rotate(-15deg);
     z-index: -5;
 }
+
+@media screen and (max-width: 768px){
+.home__right,
+.home__left {
+    display: none;
+}
+}
