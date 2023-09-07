@@ -140,7 +140,7 @@ export const skills = [
       title: 'PHP',
       percentage: '20',
     },
-    {/*
+    /*
     {
       id: 9,
       title: 'ExpressJS',
@@ -160,7 +160,7 @@ export const skills = [
       id: 12,
       title: 'MYSQL',
       percentage: '40',
-    }, */}
+    }, */
   ];
 
 {/* Education */}
