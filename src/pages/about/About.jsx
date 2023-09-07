@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import Info from '../../components/info'
+import Skills from '../../components/Skills'
 import { FaDownload } from 'react-icons/fa'
 import CV from '../../assets/MyCV.pdf'
 import AboutImg from '../../assets/icon.png'
@@ -37,7 +38,15 @@ const About = () => {
 
       <div className="separator"></div>
 
-      
+      <section className="skills">
+        <h2 className="section__title">
+          My Skills
+        </h2>
+
+        <div className="skills__container container">
+          <Skills/>
+        </div>
+      </section>
     </main>
   )
 }
