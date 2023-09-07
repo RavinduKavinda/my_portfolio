@@ -179,13 +179,13 @@ export const education = [
         year: '2019',
         title: 'GCE Advanced level (Physical Science Stream)<span> Bandaranayake Central College </span>',
     },
-    {
+    /*{
         id: 3,
         category: 'education',
         icon: <FaGraduationCap />,
         year: '2016',
         title: 'GCE Ordinary level <span> Bandaranayake Central College – Veyangoda </span>',
-    },
+    },*/
   ];
 
 {/* Projects */}
