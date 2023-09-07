@@ -34,6 +34,10 @@ const About = () => {
           
         </div>
       </section>
+
+      <div className="separator"></div>
+
+      
     </main>
   )
 }
