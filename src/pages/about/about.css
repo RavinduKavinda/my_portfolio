@@ -2,3 +2,15 @@
 .info__list {
     grid-template-columns: repeat(2, 1fr);
 }
+
+.section__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-600);
+    margin-bottom: 20px;
+}
+
+.info__list {
+    row-gap: 20px;
+    margin-bottom: 32px;
+}
+
