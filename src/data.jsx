@@ -193,7 +193,7 @@ export const projects = [
     {
       id: 1,
       img: Project01,
-      title: 'Doctor Appointment System',
+      title: 'Dr onCall',
       details: [
         {
           icon: <FiFileText />,
@@ -216,12 +216,12 @@ export const projects = [
     {
         id: 2,
         img: Project02,
-        title: 'Doctor Appointment System',
+        title: 'Sporty Store',
         details: [
           {
             icon: <FiFileText />,
             title: 'Project : ',
-            desc: 'Doctor Appointment System',
+            desc: 'E Commerce Web Page Front-End',
           },
           
           {
@@ -282,7 +282,7 @@ export const projects = [
           },
         ],
       },
-    {
+    /*{
         id: 5,
         img: Project05,
         title: 'Doctor Appointment System',
@@ -327,7 +327,7 @@ export const projects = [
             desc: '',
           },
         ],
-      },
+      },*/
     ];
 
 {/*Theme*/}
