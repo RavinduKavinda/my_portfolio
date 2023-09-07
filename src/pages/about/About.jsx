@@ -49,7 +49,13 @@ const About = () => {
       </section>
 
       <div className="separator"></div>
-      
+
+      <section className="education">
+        <h2 className="section__title">
+          Education
+        </h2>
+      </section>
+
     </main>
   )
 }
