@@ -2,6 +2,8 @@ import React from 'react'
 import './About.css'
 import Info from '../../components/info'
 import Skills from '../../components/Skills'
+import EducationItem from '../../components/EducationItem'
+import { education } from '../../data'
 import { FaDownload } from 'react-icons/fa'
 import CV from '../../assets/MyCV.pdf'
 import AboutImg from '../../assets/icon.png'
@@ -50,10 +52,22 @@ const About = () => {
 
       <div className="separator"></div>
 
+      {/*-----Educayion-----*/}
+
       <section className="education">
         <h2 className="section__title">
           Education
         </h2>
+
+        <div className="edu__container container">
+          <div className="edu__data">
+            {education.map((val) => {
+              if (val.category === 'education') {
+                return <EducationItem key={val.id} {...val} />;
+              }
+            })}
+          </div>
+        </div>
       </section>
 
     </main>
