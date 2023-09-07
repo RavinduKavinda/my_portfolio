@@ -19,7 +19,7 @@ const About = () => {
               Personal Info.
             </h3>
 
-            <ul className="info__list grid">
+            <ul className="info__list container">
               <Info/>
             </ul>
             <a href={CV} download='' className="button">
