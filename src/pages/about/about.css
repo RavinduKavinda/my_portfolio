@@ -1,6 +1,8 @@
+/*-----About-----*/
 .about__container,
 .info__list {
     grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
 }
 
 .section__subtitle {
@@ -36,6 +38,8 @@
   margin: 72px auto 56px;
 }
 
+
+ /*-----Skills-----*/
 .skills__container {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 50px;
@@ -59,3 +63,73 @@
     font-weight: var(--weight-600);
     text-align: center;
 }
+
+ /*-----Edu Section-----*/
+.edu__container {
+  justify-content: center;
+}
+
+.edu__item {
+    position: relative;
+    padding-left: 60px;
+}
+
+.edu__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.edu__item::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    left: 20px;
+    border-left: 2px solid var(--border-color);
+}
+
+.edu__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--first-color);
+    color: var(--text-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: var(--normal-font-size);
+}
+
+.edu__date {
+    background-color: var(--container-color);
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+}
+
+.edu__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-500);
+    margin-block: 15px 30px;
+}
+
+.edu__title span {
+    color: var(--text-color);
+    font-family: var(--body-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    position: relative;
+    padding-left: 26px;
+}
+
+.edu__title span::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 8px;
+    height: 3px;
+    background-color: var(--text-color);
+}
+
