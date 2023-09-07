@@ -11,6 +11,8 @@ import AboutImg from '../../assets/icon.png'
 const About = () => {
   return (
     <main className="section rcontainer">
+
+      {/*-----Info-----*/}
       <section className="about">
         <h2 className="section__title">
           About <span>Me</span>
@@ -40,6 +42,7 @@ const About = () => {
 
       <div className="separator"></div>
 
+      {/*-----Skills-----*/}
       <section className="skills">
         <h2 className="section__title">
           My Skills
@@ -52,8 +55,7 @@ const About = () => {
 
       <div className="separator"></div>
 
-      {/*-----Educayion-----*/}
-
+      {/*-----Education-----*/}
       <section className="education">
         <h2 className="section__title">
           Education
