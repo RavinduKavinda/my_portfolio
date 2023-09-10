@@ -30,6 +30,27 @@ const Contact = () => {
             Let's connect and achieve great things together.
           </p>
 
+          {/*-----contact info-----*/}
+          <div className="contact__info">   
+            <div className="info__item">
+              <FaEnvelopeOpen className='info__icon'/>
+
+              <div>
+                <span className="info__title">Mail me</span>
+                <span className="info__desc">dlravindukavinda@gmail.com</span>
+              </div>
+            </div>
+
+            <div className="info__item">
+              <FaPhoneSquare className='info__icon'/>
+
+              <div>
+                <span className="info__title">Call me</span>
+                <span className="info__desc">+94 77 835 6450</span>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
