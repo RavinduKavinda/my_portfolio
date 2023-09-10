@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Close from '../assets/close.svg'
 
 const ProjectsItem = ({img, title, details}) => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  }
   return (
     <div className="projects__item">
         <img src={img} alt="" className="projects__img" />
 
-        <div className="projects__hover">
+        <div className="projects__hover" onClick={toggleModal}>
             <h3 className="projects__title">{title}</h3>
         </div>
         {/*----- Details -----*/}
+
+        {modal && (
+
         <div className="projects__modal">
             <div className="projects__modal-content">
                 <img src={Close} alt="" className="modal__close" />
@@ -34,6 +42,8 @@ const ProjectsItem = ({img, title, details}) => {
                 <img src={img} alt="" className='modal__img'/>
             </div>
         </div>
+        )}
+        
     </div>
   )
 }
