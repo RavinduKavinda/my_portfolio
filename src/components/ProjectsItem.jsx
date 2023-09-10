@@ -23,13 +23,15 @@ const ProjectsItem = ({img, title, details}) => {
                         <span className="item__icon">{icon}</span>
 
                         <div>
-                          
+                          <span className="item__title">{title}</span>
+                          <span className="item__desc">{desc}</span>
                         </div>
                       </li>
                     )
                     })
                   }
                 </ul>
+
             </div>
         </div>
     </div>
