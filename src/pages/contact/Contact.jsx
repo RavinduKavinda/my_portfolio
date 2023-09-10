@@ -51,6 +51,15 @@ const Contact = () => {
             </div>
 
           </div>
+
+          {/*-----social media----- */}
+          <div className="contact__social">
+            <a href="/" className='social__link'> <FaLinkedinIn/> </a>  
+            <a href="/" className='social__link'> <FaGithub/> </a> 
+            <a href="/" className='social__link'> <FaMedium/> </a> 
+            <a href="/" className='social__link'> <FaDiscord/> </a>          
+          </div>
+
         </div>
       </div>
     </section>
