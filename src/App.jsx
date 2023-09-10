@@ -6,12 +6,14 @@ import About from './pages/about/About'
 import Project from './pages/project/Project'
 import Contact from './pages/contact/Contact'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Themes from './components/Themes'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Navbar />
+      <Themes />
       <Routes>
         <Route index element={<Home />} />
         <Route path='/about' element={<About />} />
