@@ -83,3 +83,28 @@
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
+
+.modal__list {
+    row-gap: 15px;
+    margin-bottom: 24px;
+}
+
+.modal__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.item__icon {
+    display: flex;
+}
+
+.item__title,
+.item__desc {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.item__desc {
+    font-weight: var(--weight-600);
+}
