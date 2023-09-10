@@ -61,6 +61,44 @@ const Contact = () => {
           </div>
 
         </div>
+
+        {/*-----massage box-----*/}
+        <form className="contact__form">
+          <div className="form__input-group">
+
+            <div className="form__input">
+              <input
+                type='text'
+                placeholder='Your Name'
+                className='form__control'/>
+            </div>
+            <div className="form__input">
+              <input
+                type='email'
+                placeholder='Your Email'
+                className='form__control'/>
+            </div>
+            <div className="form__input">
+              <input
+                type='text'
+                placeholder='Your Subject'
+                className='form__control'/>
+            </div>
+          </div>
+
+          <div className="form__input">
+            <textarea 
+              placeholder='Your Message'
+              className='form_control textarea'></textarea>
+          </div>
+
+          <button className="button">
+            Send Message
+            <span className="button__icon contact__btn-icon">
+              <FiSend/>
+            </span>
+          </button>
+        </form>
       </div>
     </section>
   )
