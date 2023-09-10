@@ -1,0 +1,36 @@
+.projects__container {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.projects__item {
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projects__img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects__hover {
+    background-color: var(--first-color);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+/*
+.projects__modal {
+    position: fixed;
+    inset: 0;
+    background-color: red;
+}
+
+.modal__close {
+    width: 40px;
+}
+*/
