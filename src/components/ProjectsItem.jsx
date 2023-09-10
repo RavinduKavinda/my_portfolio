@@ -35,7 +35,7 @@ const ProjectsItem = ({img, title, details}) => {
                           <span className="item__desc">{desc}</span>
                         </div>
                       </li>
-                    )
+                    );
                     })
                   }
                 </ul>

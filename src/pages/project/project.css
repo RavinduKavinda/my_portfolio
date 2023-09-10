@@ -13,6 +13,7 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
+    vertical-align: middle;
 }
 
 .projects__hover {
@@ -21,16 +22,45 @@
     inset: 0;
     display: grid;
     place-items: center;
+    opacity: 0;
+    transition: all 0.8s ease;
 }
 
-/*
+.projects__title {
+    color: var(--text-white);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+    transform: translateY(-10px);
+    transition: all 0.8s ease;
+}
+
+.projects__item:hover .projects__hover {
+    opacity: 1;
+}
+
+.projects__item:hover .projects__title {
+    transform: translateY(0);
+}
+
 .projects__modal {
     position: fixed;
     inset: 0;
-    background-color: red;
+    background-color: white;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+.projects__modal-content {
+    background-color: var(--container-color);
+    max-width: 650px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .modal__close {
     width: 40px;
 }
-*/
