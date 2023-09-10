@@ -20,7 +20,7 @@ const ProjectsItem = ({img, title, details}) => {
 
         <div className="projects__modal">
             <div className="projects__modal-content">
-                <img src={Close} alt="" className="modal__close" />
+                <img src={Close} alt="" className="modal__close" onClick={toggleModal}/>
 
                 <h3 className="modal__title">{title}</h3>
 
