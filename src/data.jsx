@@ -19,10 +19,10 @@ import Theme04 from './assets/pink.png';
 import Theme05 from './assets/purple.png';
 import Theme06 from './assets/red.png';
 
-import Project01 from './assets/icon.png';
-import Project02 from './assets/icon.png';
-import Project03 from './assets/icon.png';
-import Project04 from './assets/icon.png';
+import Project01 from './assets/project01.png';
+import Project02 from './assets/project02.png';
+import Project03 from './assets/project03.png';
+import Project04 from './assets/project04.png';
 import Project05 from './assets/icon.png';
 import Project06 from './assets/icon.png';
 

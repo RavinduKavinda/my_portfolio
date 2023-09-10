@@ -15,6 +15,21 @@ const ProjectsItem = ({img, title, details}) => {
                 <img src={Close} alt="" className="modal__close" />
 
                 <h3 className="modal__title">{title}</h3>
+
+                <ul className="modal__list container">
+                  {details.map(({icon, title, desc}, index) => {
+                    return (
+                      <li className="modal__item" key={index}>
+                        <span className="item__icon">{icon}</span>
+
+                        <div>
+                          
+                        </div>
+                      </li>
+                    )
+                    })
+                  }
+                </ul>
             </div>
         </div>
     </div>
