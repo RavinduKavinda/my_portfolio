@@ -89,7 +89,7 @@ const Contact = () => {
           <div className="form__input">
             <textarea 
               placeholder='Your Message'
-              className='form_control textarea'></textarea>
+              className='form__control textarea'></textarea>
           </div>
 
           <button className="button">
