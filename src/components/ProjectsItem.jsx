@@ -9,7 +9,7 @@ const ProjectsItem = ({img, title, details}) => {
         <div className="projects__hover">
             <h3 className="projects__title">{title}</h3>
         </div>
-
+        {/*----- Details -----*/}
         <div className="projects__modal">
             <div className="projects__modal-content">
                 <img src={Close} alt="" className="modal__close" />
@@ -31,7 +31,7 @@ const ProjectsItem = ({img, title, details}) => {
                     })
                   }
                 </ul>
-
+                <img src={img} alt="" className='modal__img'/>
             </div>
         </div>
     </div>
