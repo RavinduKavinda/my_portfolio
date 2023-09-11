@@ -58,6 +58,7 @@
   display: grid;
   place-items: center;
   box-shadow: gray;
+  transition: all 0.5s ease;
 }
 
 .switch__toggler {
@@ -78,4 +79,9 @@
 
 .show-switcher {
     transform: translateX(0);
+}
+
+.show-switcher .switch__toggler,
+.show-switcher .theme__toggler {
+    left: -100%;
 }
