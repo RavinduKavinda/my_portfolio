@@ -14,18 +14,41 @@ const getStorageColor = () => {
     return color;
 };
 
+const getStorageTheme = () => {
+    let theme = 'light-theme';
+    if (localStorage.getItem('theme')) {
+        theme = localStorage.getItem('theme');
+    }
+
+    return theme;
+};
+
 const Themes = () => {
     const [showSwitcher, setshowSwitcher] = useState(false);
     const [color, setColor] = useState(getStorageColor());
+    const [theme, setTheme] = useState(getStorageTheme());
 
     const changeColor = (color) => {
         setColor(color);
+    };
+
+    const toggleTheme = () => {
+        if (theme === 'light-theme') {
+            setTheme('dark-theme');
+        } else {
+            setTheme('light-theme');
+        }
     };
 
     useEffect(() => {
         document.documentElement.style.setProperty('--first-color', color);
         localStorage.setItem('color', color);
     }, [color]);
+
+    useEffect(() => {
+        document.documentElement.className = theme;
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
   return (
     <div>
@@ -35,8 +58,8 @@ const Themes = () => {
                 <FaCogs />
             </div>
 
-            <div className="theme__toggler">
-                <FiMoon />
+            <div className="theme__toggler" onClick={toggleTheme}>
+                {theme === 'light-theme' ? <FiMoon/> : <FiSun/> }
             </div>
 
             <h3 className="switcher__title">

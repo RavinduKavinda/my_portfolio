@@ -34,6 +34,15 @@
     --weight-800: 800;
 }
 
+/*-----Dark Theme-----*/
+.dark-theme {
+    --title-color: #dfe4ea;
+    --text-color: #aab8bc;
+    --body-color: #111111;
+    --container-color: #39393a;
+    --border-color: #5e5f60;
+}
+
 /*-----Base-----*/
 *{
     margin: 0;
