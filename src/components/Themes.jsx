@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { themes } from '../data'
 import Themeitem from './Themeitem'
 import { FaCogs } from 'react-icons/fa'
@@ -6,10 +6,13 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 import './Themes.css'
 
 const Themes = () => {
+    const [showSwitcher, setshowSwitcher] = useState(false);
+
   return (
     <div>
-        <div className="style__switcher">
-            <div className="switch__toggler">
+        <div className={`${showSwitcher ? 'show-switcher' : ''} style__switcher`}>
+            <div className="switch__toggler"
+                 onClick={() => setshowSwitcher(!showSwitcher)} >
                 <FaCogs />
             </div>
 
@@ -28,7 +31,8 @@ const Themes = () => {
                 })}
             </div>
 
-            <div className="switcher__close">
+            <div className="switcher__close"
+                 onClick={() => setshowSwitcher(!showSwitcher)}>
                 &times;
             </div>
         </div>

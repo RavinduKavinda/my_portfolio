@@ -76,4 +76,6 @@
     right: 15px;
 }
 
-
+.show-switcher {
+    transform: translateX(0);
+}

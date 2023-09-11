@@ -69,7 +69,7 @@
 }
 
 /*----- Different Screen -----*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .nav__menu {
         all: unset;
     }
