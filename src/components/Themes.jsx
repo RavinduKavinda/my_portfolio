@@ -5,9 +5,18 @@ import { FaCogs } from 'react-icons/fa'
 import { FiSun, FiMoon } from 'react-icons/fi'
 import './Themes.css'
 
+const getStorageColor = () => {
+    let color = '#0984e3';
+    if (localStorage.getItem('color')) {
+        color = localStorage.getItem('color');
+    }
+
+    return color;
+};
+
 const Themes = () => {
     const [showSwitcher, setshowSwitcher] = useState(false);
-    const [color, setColor] = useState('green');
+    const [color, setColor] = useState(getStorageColor());
 
     const changeColor = (color) => {
         setColor(color);
@@ -15,6 +24,7 @@ const Themes = () => {
 
     useEffect(() => {
         document.documentElement.style.setProperty('--first-color', color);
+        localStorage.setItem('color', color);
     }, [color]);
 
   return (
