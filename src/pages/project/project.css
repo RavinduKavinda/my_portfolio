@@ -85,7 +85,7 @@
 }
 
 .modal__list {
-    row-gap: 15px;
+    row-gap: 15px !important;
     margin-bottom: 24px;
 }
 
