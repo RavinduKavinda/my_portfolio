@@ -346,5 +346,13 @@
         right: -12%;
     }
 
+    .contact__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form__input-group {
+        grid-template-columns: 1fr;
+    }
 
 }
