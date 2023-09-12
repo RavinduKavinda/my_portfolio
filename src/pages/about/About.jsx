@@ -18,8 +18,8 @@ const About = () => {
           About <span>Me</span>
         </h2>
 
-        <div className="about__container container">
-          <div className="about__info">
+        <div className="about__container container about__info">
+
             <h3 className="section__subtitle">
               Personal Info.
             </h3>
@@ -27,17 +27,14 @@ const About = () => {
             <ul className="info__list container">
               <Info/>
             </ul>
-            <a href={CV} download='' className="button">
+          </div> 
+           
+          <a href={CV} download='' className="button">
               Download CV
               <span className="button__icon">
                 <FaDownload/>
               </span>
-            </a>
-          </div>
-
-          <img src={AboutImg} alt="" className='about__img' />
-          
-        </div>
+            </a>        
       </section>
 
       <div className="separator"></div>
