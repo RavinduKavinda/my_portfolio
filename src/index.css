@@ -126,12 +126,11 @@
     }
 
     .about__container {
-        row-gap: 40px;
         margin-left: 100px;
     }
 
     .section__subtitle {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     
     .skills__container {
