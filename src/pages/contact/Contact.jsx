@@ -75,10 +75,10 @@ export const Contact = () => {
 
           {/*-----social media----- */}
           <div className="contact__social">
-            <a href="/" className='social__link'> <FaLinkedinIn/> </a>  
-            <a href="/" className='social__link'> <FaGithub/> </a> 
-            <a href="/" className='social__link'> <FaMedium/> </a> 
-            <a href="/" className='social__link'> <FaDiscord/> </a>          
+            <a href="https://www.linkedin.com/in/ravindu-kavinda-3ba1111a1/" className='social__link'> <FaLinkedinIn/> </a>  
+            <a href="https://github.com/RavinduKavinda" className='social__link'> <FaGithub/> </a> 
+            <a href="https://medium.com/@ravindukavinda" className='social__link'> <FaMedium/> </a> 
+            <a href="https://discord.com/channels/@demon0418" className='social__link'> <FaDiscord/> </a>          
           </div>
 
         </div>
