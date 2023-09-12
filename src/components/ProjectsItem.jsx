@@ -32,7 +32,7 @@ const ProjectsItem = ({img, title, details}) => {
 
                         <div>
                           <span className="item__title">{title}</span>
-                          <span className="item__desc">{desc}</span>
+                          <a href={desc} target="_blank"  className="item__desc ">{desc}</a>
                         </div>
                       </li>
                     );

@@ -94,7 +94,7 @@ export const personalInfo = [
     {
       id: 8,
       title: 'Langages : ',
-      description: 'Sinhala, English',
+      description: 'English, Sinhala',
     },
   ];
 
@@ -204,12 +204,12 @@ export const projects = [
         {
           icon: <FaCode />,
           title: 'Language : ',
-          desc: '',
+          desc: 'react js, node js,  express js, MongoDB',
         },
         {
           icon: <FiExternalLink />,
           title: 'Preview : ',
-          desc: '',
+          desc: 'https://github.com/RavinduKavinda/doctor-appointment-booking',
         },
       ],
     },
@@ -227,58 +227,58 @@ export const projects = [
           {
             icon: <FaCode />,
             title: 'Language : ',
-            desc: '',
+            desc: 'react js',
           },
           {
             icon: <FiExternalLink />,
             title: 'Preview : ',
-            desc: '',
+            desc: 'https://github.com/desilva-se19047/ecommerce-frontend-group-project',
           },
         ],
       },
     {
         id: 3,
         img: Project03,
-        title: 'Doctor Appointment System',
+        title: 'Snake Game',
         details: [
           {
             icon: <FiFileText />,
             title: 'Project : ',
-            desc: 'Doctor Appointment System',
+            desc: 'Snake Game',
           },
           
           {
             icon: <FaCode />,
             title: 'Language : ',
-            desc: '',
+            desc: 'HTML, CSS, JavaScript',
           },
           {
             icon: <FiExternalLink />,
             title: 'Preview : ',
-            desc: '',
+            desc: 'https://github.com/RavinduKavinda/Snake-Game',
           },
         ],
       },
     {
         id: 4,
         img: Project04,
-        title: 'Doctor Appointment System',
+        title: 'Discord Bot',
         details: [
           {
             icon: <FiFileText />,
             title: 'Project : ',
-            desc: 'Doctor Appointment System',
+            desc: 'Discord Music Bot',
           },
           
           {
             icon: <FaCode />,
             title: 'Language : ',
-            desc: '',
+            desc: 'Python',
           },
           {
             icon: <FiExternalLink />,
             title: 'Preview : ',
-            desc: '',
+            desc: 'https://github.com/RavinduKavinda/discord_bot',
           },
         ],
       },
