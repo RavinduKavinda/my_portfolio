@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef }  from 'react'
 import {
   FaEnvelopeOpen, 
   FaPhoneSquare,
@@ -9,8 +9,29 @@ import {
 import {FaMedium} from 'react-icons/fa6'
 import {FiSend} from 'react-icons/fi'
 import './contact.css'
+import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+
+export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        'service_s6ryey9', 
+        'template_ptk79vm', 
+      form.current, 
+        '8l4HLiO3bG1xP4rZZ')
+
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message Sent");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  
   return (
     <section className="contact section">
       <h2 className="section__title">
@@ -63,36 +84,40 @@ const Contact = () => {
         </div>
 
         {/*-----massage box-----*/}
-        <form className="contact__form">
+        <form className="contact__form" ref={form} onSubmit={sendEmail}>
           <div className="form__input-group">
 
             <div className="form__input">
               <input
                 type='text'
                 placeholder='Your Name'
-                className='form__control'/>
+                className='form__control'
+                name='user__name'/>
             </div>
             <div className="form__input">
               <input
                 type='email'
                 placeholder='Your Email'
-                className='form__control'/>
+                className='form__control'
+                name='user__email'/>
             </div>
             <div className="form__input">
               <input
                 type='text'
                 placeholder='Your Subject'
-                className='form__control'/>
+                className='form__control'
+                name='user__subject'/>
             </div>
           </div>
 
           <div className="form__input">
             <textarea 
               placeholder='Your Message'
-              className='form__control textarea'></textarea>
+              className='form__control textarea'
+              name='message'></textarea>
           </div>
 
-          <button className="button">
+          <button type='submit' className="button">
             Send Message
             <span className="button__icon contact__btn-icon">
               <FiSend/>
