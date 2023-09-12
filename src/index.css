@@ -310,6 +310,41 @@
         display: block;
     }
 
-    
+    .rcontainer {
+        min-width: 350px;
+    }
+
+    .info__list {
+       grid-template-columns: 1fr; 
+    }
+
+    .edu__container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .projects__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .projects__img {
+        height: 160px;
+    }
+
+    .projects__modal-content {
+        max-width: 280px;
+    }
+
+    .modal__img {
+        height: 120px;
+    }
+
+    .modal__close {
+        width: 25px;
+        height: 25px;
+        right: -12%;
+    }
+
 
 }
