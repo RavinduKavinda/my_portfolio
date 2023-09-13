@@ -34,7 +34,7 @@ const About = () => {
               <span className="button__icon">
                 <FaDownload/>
               </span>
-            </a>        
+          </a>        
       </section>
 
       <div className="separator"></div>
