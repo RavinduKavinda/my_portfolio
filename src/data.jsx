@@ -7,6 +7,10 @@ import {
     FaCode,
   } from 'react-icons/fa';
 
+import {
+    PiCertificate
+  } from 'react-icons/pi';
+
 import { 
     FiFileText, 
     FiExternalLink 
@@ -23,7 +27,7 @@ import Project01 from './assets/project01.png';
 import Project02 from './assets/project02.png';
 import Project03 from './assets/project03.png';
 import Project04 from './assets/project04.png';
-import Project05 from './assets/icon.png';
+import Project05 from './assets/project05.png';
 import Project06 from './assets/icon.png';
 
 {/* Nav Icons */}
@@ -140,7 +144,6 @@ export const skills = [
       title: 'PHP',
       percentage: '20',
     },
-    /*
     {
       id: 9,
       title: 'ExpressJS',
@@ -160,7 +163,7 @@ export const skills = [
       id: 12,
       title: 'MYSQL',
       percentage: '40',
-    }, */
+    }, 
   ];
 
 {/* Education */}
@@ -179,13 +182,32 @@ export const education = [
         year: '2019',
         title: 'GCE Advanced level (Physical Science Stream)<span> Bandaranayake Central College </span>',
     },
-    /*{
+    {
         id: 3,
         category: 'education',
         icon: <FaGraduationCap />,
         year: '2016',
         title: 'GCE Ordinary level <span> Bandaranayake Central College – Veyangoda </span>',
-    },*/
+    },
+  ];
+
+export const certifacate = [
+    {
+        id: 1,
+        category: 'certifacate',
+        icon: <PiCertificate />,
+        year: '2023',
+        title: 'Introduction to Front-End Development <span> Meta </span>',
+        link: 'https://coursera.org/share/1281e2b10e673a01f11d08e06ad91a5e',
+    },
+    {
+      id: 2,
+      category: 'certifacate',
+      icon: <PiCertificate />,
+      year: '2023',
+      title: 'Introduction to Android Mobile Application Development <span> Meta </span>',
+      link: 'https://www.coursera.org/account/accomplishments/verify/RR6E365253CS?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course',
+  },
   ];
 
 {/* Projects */}
@@ -282,30 +304,30 @@ export const projects = [
           },
         ],
       },
-    /*{
+    {
         id: 5,
         img: Project05,
-        title: 'Doctor Appointment System',
+        title: 'Blog-Matrix Frontend',
         details: [
           {
             icon: <FiFileText />,
             title: 'Project : ',
-            desc: 'Doctor Appointment System',
+            desc: 'Online Blog Website',
           },
           
           {
             icon: <FaCode />,
             title: 'Language : ',
-            desc: '',
+            desc: 'React CSS HTML',
           },
           {
             icon: <FiExternalLink />,
             title: 'Preview : ',
-            desc: '',
+            desc: 'https://github.com/RavinduKavinda/blogmatrix',
           },
         ],
       },
-    {
+    /*{
         id: 6,
         img: Project06,
         title: 'Doctor Appointment System',

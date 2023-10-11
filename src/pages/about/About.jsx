@@ -3,10 +3,10 @@ import './About.css'
 import Info from '../../components/info'
 import Skills from '../../components/Skills'
 import EducationItem from '../../components/EducationItem'
-import { education } from '../../data'
+import Certifacate from '../../components/Certifacate'
+import { certifacate, education } from '../../data'
 import { FaDownload } from 'react-icons/fa'
 import CV from '../../assets/MyCV.pdf'
-import AboutImg from '../../assets/icon.png'
 
 const About = () => {
   return (
@@ -66,7 +66,17 @@ const About = () => {
               }
             })}
           </div>
+
+          <div className="edu__data">
+            {certifacate.map((val) => {
+              if (val.category === 'certifacate') {
+                return <Certifacate key={val.id} {...val} />;
+              }
+            })}
+          </div>
         </div>
+
+        
       </section>
 
     </main>

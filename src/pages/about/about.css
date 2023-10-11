@@ -70,6 +70,7 @@
  /*-----Edu Section-----*/
 .edu__container {
   justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .edu__item {
