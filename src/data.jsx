@@ -207,7 +207,8 @@ export const certifacate = [
       year: '2023',
       title: 'Programming with JavaScript <span> Meta </span>',
       link: 'https://www.coursera.org/account/accomplishments/verify/8YNANLE9SYFM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course',
-    },{
+    },
+    {
       id: 3,
       category: 'certifacate',
       icon: <PiCertificate />,
