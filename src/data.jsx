@@ -28,7 +28,7 @@ import Project02 from './assets/project02.png';
 import Project03 from './assets/project03.png';
 import Project04 from './assets/project04.png';
 import Project05 from './assets/project05.png';
-import Project06 from './assets/icon.png';
+import Project06 from './assets/project06.png';
 
 {/* Nav Icons */}
 export const links = [
@@ -335,29 +335,29 @@ export const projects = [
           },
         ],
       },
-    /*{
+    {
         id: 6,
         img: Project06,
-        title: 'Doctor Appointment System',
+        title: 'Auto Master',
         details: [
           {
             icon: <FiFileText />,
             title: 'Project : ',
-            desc: 'Doctor Appointment System',
+            desc: 'Auth0 Integration in Node MVC Application',
           },
           
           {
             icon: <FaCode />,
             title: 'Language : ',
-            desc: '',
+            desc: 'NodeJS',
           },
           {
             icon: <FiExternalLink />,
             title: 'Preview : ',
-            desc: '',
+            desc: 'https://github.com/RavinduKavinda/Auto-Master.git',
           },
         ],
-      },*/
+      },
     ];
 
 {/*Theme*/}
